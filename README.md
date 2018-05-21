@@ -18,8 +18,8 @@
 then output as follows:
 
 	# data_summary(x)
-	N Mean Var sd   se  CV Median  mad Q1   Q3  IQR Min Max   Range CSS   USS
-	[1] 11 22.8 901 30 9.05 132     11 10.4  5 27.5 22.5   1 100   99   9014 14741
+	     N Mean Var sd   se  CV  Median  mad  Q1   Q3   IQR   Min  Max   Range  CSS    USS
+	[1] 11 22.8 901 30 9.05 132    11   10.4  5   27.5  22.5   1   100     99   9014  14741
 
     
 ## @description
