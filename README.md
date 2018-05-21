@@ -1,6 +1,6 @@
 # research1p1
 
-[![HitCount](http://hits.dwyl.io/PhDMeiwp/basicTrendline.svg)](http://hits.dwyl.io/PhDMeiwp/research1p1)
+[![HitCount](http://hits.dwyl.io/PhDMeiwp/research1p1.svg)](http://hits.dwyl.io/PhDMeiwp/research1p1)
 
 ## Installing "research1p1" package in R
 
