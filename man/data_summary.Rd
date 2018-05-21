@@ -8,10 +8,13 @@ data_summary(x, digits = 3)
 }
 \description{
 The results include sumple number (N), mean, varicance (Var), standard deviation (sd), standard error (se, =sd/sqrt(n)), coefficient of variation (CV, %),
- median,  the first quartile (Q1), the third quartile (Q3), corrected sum or squares (CSS), uncorrected sum or squares (USS), range, interquartile range (IQR), Skewness, and Kurtosis.
+ median, median absolute deviation (mad), the first quartile (Q1), the third quartile (Q3), minimum, maximum, corrected sum or squares (CSS), uncorrected sum or squares (USS), range, interquartile range (IQR).
 }
 \examples{
-library(research1p1)
+library(R11)
 x<-rnorm(n = 15, mean = 100, sd = 10) 
 data_summary(x)
+}
+\seealso{
+\code{\link[stats]{IQR}},\code{\link[stats]{mad}}, \code{\link[DescTools]{MeanCI}}, \code{\link[DescTools]{MedianCI}}, \code{\link[DescTools]{MeanCI}}, \code{\link[DescTools]{Skew}}, \code{\link[DescTools]{Kurt}}
 }

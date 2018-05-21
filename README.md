@@ -12,18 +12,19 @@
 
 ## @Examples
 	
-    x<-rnorm(n = 15, mean = 100, sd = 10) 
+    x<-c(1,3,4,6,8,11,13,15,40,50,100) 
     data_summary(x, digits = 3)
 	
 then output as follows:
 
-	 # > data_summary(x,digits = 3)
-         N Mean  Var   sd   se   CV Median  Q3   Q1  IQR CSS    USS Range Skewness Kurtosis
-	[1] 15  101 66.6 8.16 2.11 8.08   97.3 107 95.9 11.4 933 153999  31.4    0.309 -0.182
+	# data_summary(x)
+		N Mean Var sd   se  CV Median  mad Q1   Q3  IQR Min Max   Range CSS   USS
+	[1] 11 22.8 901 30 9.05 132     11 10.4  5 27.5 22.5   1 100   99   9014 14741
+
     
 ## @description
 The results include sample number (N), mean, varicance (Var), 
 standard deviation (sd), standard error [se, =sd/sqrt(n)], coefficient of variation (CV, %),
-median,  the first quartile (Q1), the third quartile (Q3), interquartile range (IQR), 
+median, **median absolute deviation (mad)**, the first quartile (Q1), the third quartile (Q3), interquartile range (IQR), minimum, maximum, range
 corrected sum of squares (CSS), uncorrected sum of squares (USS), 
-range, skewness, and kurtosis.
+.

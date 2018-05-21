@@ -1,13 +1,15 @@
 #' Data Summary
 #' 
 #' @description The results include sumple number (N), mean, varicance (Var), standard deviation (sd), standard error (se, =sd/sqrt(n)), coefficient of variation (CV, %),
-#'  median,  the first quartile (Q1), the third quartile (Q3), corrected sum or squares (CSS), uncorrected sum or squares (USS), range, interquartile range (IQR), Skewness, and Kurtosis.
+#'  median, median absolute deviation (mad), the first quartile (Q1), the third quartile (Q3), minimum, maximum, corrected sum or squares (CSS), uncorrected sum or squares (USS), range, interquartile range (IQR).
 #' @import stats
 #' @export
 #' @examples 
-#' library(research1p1)
-#' x<-rnorm(n = 15, mean = 100, sd = 10) 
+#' library(R11)
+#' x<-c(1,3,4,6,8,11,13,15,40,50,100) 
 #' data_summary(x)
+#' @seealso \code{\link[stats]{IQR}},\code{\link[stats]{mad}}, \code{\link[DescTools]{MeanCI}}, \code{\link[DescTools]{MedianCI}}, \code{\link[DescTools]{MeanCI}}, \code{\link[DescTools]{Skew}}, \code{\link[DescTools]{Kurt}}
+#' @Readmore Find more useful functions in 'DescTools' pacakge, such as Gini Coefficient, Geometric Mean and Standard Deviation, G-Test for Count Data, Skewness and Kurtosis, Confidence Interval for the Mean, Confidence Interval for the Median.
 
 data_summary <- function(x, digits = 3){
 options(digits = digits)
@@ -18,16 +20,16 @@ s <- sd(x)
 me <- median(x)
 q3 <- quantile(x,probs = 0.75)
 q1 <- quantile(x,probs = 0.25)
+min <- min(x)
+max <- max(x)
 cv <- 100*s/m
 css <- sum((x-m)^2)
 uss <- sum(x^2)
 R <- max(x)-min(x)
-R1 <- quantile(x,3/4)-quantile(x,1/4)
+IQR <- IQR(x)
+mad <- mad(x)
 sm <- s/sqrt(n)
-g1 <- n/((n-1)*(n-2))*sum((x-m)^3)/s^3
-g2 <- ((n*(n+1))/((n-1)*(n-2)*(n-3))*sum((x-m)^4)/s^4 - (3*(n-1)^2)/((n-2)*(n-3)))
 
-data.frame(N=n, Mean=m, Var=v, sd=s, se=sm, CV=cv, 
-Median=me, Q3=q3, Q1=q1, IQR=R1, CSS=css, USS=uss,
-Range=R, Skewness=g1, Kurtosis=g2, row.names="[1]")
+data.frame(N=n, Mean=m, Var=v, sd=s, se=sm, CV=cv, Median=me, mad=mad, Q1=q1, Q3=q3, IQR=IQR, Min = min, Max = max,Range=R, 
+ CSS=css, USS=uss, row.names="[1]")
 }
