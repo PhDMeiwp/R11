@@ -3,6 +3,7 @@
 #' @description The results include sumple number (N), mean, varicance (Var), standard deviation (sd), standard error (se, =sd/sqrt(n)), coefficient of variation (CV, %),
 #'  median,  the first quartile (Q1), the third quartile (Q3), corrected sum or squares (CSS), uncorrected sum or squares (USS), range, interquartile range (IQR), Skewness, and Kurtosis.
 #' @import stats
+#' @export
 #' @examples 
 #' library(research1p1)
 #' x<-rnorm(n = 15, mean = 100, sd = 10) 

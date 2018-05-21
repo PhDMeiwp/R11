@@ -1,13 +1,13 @@
-# research1p1
+# R11
 
-[![HitCount](http://hits.dwyl.io/PhDMeiwp/research1p1.svg)](http://hits.dwyl.io/PhDMeiwp/research1p1)
+[![HitCount](http://hits.dwyl.io/PhDMeiwp/R11.svg)](http://hits.dwyl.io/PhDMeiwp/R11)
 
-## Installing "research1p1" package in R
+## Installing "R11" package in R
 
 
     install.packages("devtools")
-	devtools::install_github("PhDMeiwp/research1p1@master", force = TRUE)
-	library(research1p1)
+	devtools::install_github("PhDMeiwp/R11@master", force = TRUE)
+	library(R11)
 
 
 ## @Examples
