@@ -26,5 +26,9 @@ then output as follows:
 The results include sample number (N), mean, varicance (Var), 
 standard deviation (sd), standard error [se, =sd/sqrt(n)], coefficient of variation (CV, %),
 median, **median absolute deviation (mad)**, the first quartile (Q1), the third quartile (Q3), interquartile range (IQR), minimum, maximum, range
-corrected sum of squares (CSS), uncorrected sum of squares (USS), 
-.
+corrected sum of squares (CSS), uncorrected sum of squares (USS).
+
+## @note 
+Find more useful functions in 'DescTools' pacakge, 
+such as Gini Coefficient, Geometric Mean and Standard Deviation, G-Test for Count Data, **Skewness and Kurtosis, Confidence Interval for the Mean, Confidence Interval for the Median**.
+

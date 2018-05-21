@@ -10,9 +10,12 @@ data_summary(x, digits = 3)
 The results include sumple number (N), mean, varicance (Var), standard deviation (sd), standard error (se, =sd/sqrt(n)), coefficient of variation (CV, %),
  median, median absolute deviation (mad), the first quartile (Q1), the third quartile (Q3), minimum, maximum, corrected sum or squares (CSS), uncorrected sum or squares (USS), range, interquartile range (IQR).
 }
+\note{
+Find more useful functions in 'DescTools' pacakge, such as Gini Coefficient, Geometric Mean and Standard Deviation, G-Test for Count Data, Skewness and Kurtosis, Confidence Interval for the Mean, Confidence Interval for the Median.
+}
 \examples{
 library(R11)
-x<-rnorm(n = 15, mean = 100, sd = 10) 
+x<-c(1,3,4,6,8,11,13,15,40,50,100) 
 data_summary(x)
 }
 \seealso{
