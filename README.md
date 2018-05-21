@@ -12,8 +12,6 @@
 
 ## @Examples
 	
-Then upload your dataset including x and y data, for example
-
     x<-rnorm(n = 15, mean = 100, sd = 10) 
     data_summary(x, digits = 3)
 	
