@@ -22,8 +22,8 @@ then output as follows:
 	[1] 15  101 66.6 8.16 2.11 8.08   97.3 107 95.9 11.4 933 153999  31.4    0.309 -0.182
     
 ## @description
-The results include sumple number (N), mean, varicance (Var), 
-standard deviation (sd), standard error (se, =sd/sqrt(n)), coefficient of variation (CV, %),
+The results include sample number (N), mean, varicance (Var), 
+standard deviation (sd), standard error [se, =sd/sqrt(n)], coefficient of variation (CV, %),
 median,  the first quartile (Q1), the third quartile (Q3), interquartile range (IQR), 
-corrected sum or squares (CSS), uncorrected sum or squares (USS), 
-range, Skewness, and Kurtosis.
+corrected sum of squares (CSS), uncorrected sum of squares (USS), 
+range, skewness, and kurtosis.
