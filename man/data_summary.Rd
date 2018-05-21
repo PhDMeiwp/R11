@@ -19,5 +19,5 @@ x<-c(1,3,4,6,8,11,13,15,40,50,100)
 data_summary(x)
 }
 \seealso{
-\code{\link[stats]{IQR}},\code{\link[stats]{mad}}, \code{\link[DescTools]{MeanCI}}, \code{\link[DescTools]{MedianCI}}, \code{\link[DescTools]{MeanCI}}, \code{\link[DescTools]{Skew}}, \code{\link[DescTools]{Kurt}}
+\code{\link[stats]{IQR}}, \code{\link[stats]{mad}}, \code{\link[DescTools]{MeanCI}}, \code{\link[DescTools]{MedianCI}}, \code{\link[DescTools]{Skew}}, \code{\link[DescTools]{Kurt}}
 }

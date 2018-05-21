@@ -8,7 +8,7 @@
 #' library(R11)
 #' x<-c(1,3,4,6,8,11,13,15,40,50,100) 
 #' data_summary(x)
-#' @seealso \code{\link[stats]{IQR}},\code{\link[stats]{mad}}, \code{\link[DescTools]{MeanCI}}, \code{\link[DescTools]{MedianCI}}, \code{\link[DescTools]{MeanCI}}, \code{\link[DescTools]{Skew}}, \code{\link[DescTools]{Kurt}}
+#' @seealso \code{\link[stats]{IQR}}, \code{\link[stats]{mad}}, \code{\link[DescTools]{MeanCI}}, \code{\link[DescTools]{MedianCI}}, \code{\link[DescTools]{Skew}}, \code{\link[DescTools]{Kurt}}
 #' @note Find more useful functions in 'DescTools' pacakge, such as Gini Coefficient, Geometric Mean and Standard Deviation, G-Test for Count Data, Skewness and Kurtosis, Confidence Interval for the Mean, Confidence Interval for the Median.
 
 data_summary <- function(x, digits = 3){
