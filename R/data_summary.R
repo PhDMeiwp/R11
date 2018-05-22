@@ -7,9 +7,9 @@
 #' @examples 
 #' library(R11)
 #' x<-c(1,3,4,6,8,11,13,15,40,50,100) 
-#' #' data_summary(x)
+#' data_summary(x)
 #' 
-#' # Not run
+#' # Not run------------------
 #' shapiro.test(x)  
 #' # if p-value>0.05 (i.e. normal distribution), use Mean +/- sd; 
 #' # else, use Meadian [Q1-Q3] or Median [IQR].
@@ -19,6 +19,7 @@
 #' library(DescTools)
 #' DescTools::MeanCI(x)
 #' DescTools::MedianCI(x)
+#' # End (Not run)------------
 #' 
 #' @seealso \code{\link[stats]{IQR}}, \code{\link[stats]{mad}}, \code{\link[DescTools]{MeanCI}}, \code{\link[DescTools]{MedianCI}}, \code{\link[DescTools]{Skew}}, \code{\link[DescTools]{Kurt}}
 #' @note The basic functions in 'data_summary()' are cited from 'stats' package of R. \n Find more functions in 'DescTools' pacakge, such as Gini Coefficient, Geometric Mean and Standard Deviation, G-Test for Count Data, Skewness and Kurtosis, Confidence Interval for the Mean, Confidence Interval for the Median.
