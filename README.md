@@ -18,9 +18,9 @@ Get the development version from github:
     x<-c(1,3,4,6,8,11,13,15,40,50,100) 
     data_summary(x, digits = 3)
 	
-then output as follows:
+**then output as follows:**
 
- <img src="images/data_summary.png" width="490"/>
+ <img src="images/data_summary.png" align = center, width="490"/>
 
     
 ## Description
