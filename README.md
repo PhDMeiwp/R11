@@ -10,7 +10,7 @@ Get the development version from github:
 	devtools::install_github("PhDMeiwp/R11@master", force = TRUE)
 	library(R11)
 
-## usage
+## Usage
 	data_summary(x, digits = 3)
 
 ## Examples
@@ -20,20 +20,20 @@ Get the development version from github:
 	
 then output as follows:
 
- <img src="images/data_summary.JPG" width="400"/>
+ <img src="images/data_summary.JPG" width="490"/>
 
     
-## description
+## Description
 The results include sample number (N), mean, varicance (Var), 
 standard deviation (sd), standard error [se, =sd/sqrt(n)], coefficient of variation (CV, %),
 median, **median absolute deviation (mad)**, the first quartile (Q1), the third quartile (Q3), interquartile range (IQR), minimum, maximum, range
 corrected sum of squares (CSS), uncorrected sum of squares (USS).
 
-## note 
+## Note 
 The basic functions in 'data_summary()' are cited from 'stats' package of R.
 
 Find more functions in 'DescTools' pacakge, 
 such as Gini Coefficient, Geometric Mean and Standard Deviation, G-Test for Count Data, **Skewness and Kurtosis, Confidence Interval for the Mean, Confidence Interval for the Median**.
 
-## references
+## References
 	citation("stats")
