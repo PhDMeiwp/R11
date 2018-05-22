@@ -20,7 +20,7 @@ Get the development version from github:
 	
 **then output as follows:**
 
- <img src="images/data_summary.png" align = center, width="490"/>
+ <img src="images/data_summary.jpg", align = center, width="490"/>
 
     
 ## Description
