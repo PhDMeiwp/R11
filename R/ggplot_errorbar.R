@@ -16,9 +16,9 @@
 #' library(ggplot2)
 #' cols<-c("grey10", "blue", "red")
 #' 
-#' #################################### 
-#' # Case1: geom_barplot and geom_errorbar
-#' #################################### 
+#' ##--------------------------------------------
+#' #      Case1: geom_barplot and geom_errorbar
+#' ##--------------------------------------------
 #' p<- ggplot(data=dat,mapping = aes(x=dat$Groups, y=dat$meany, fill=factor(dat$Groups)))+
 #'        geom_col(width=0.3)+
 #'        scale_fill_manual(values = cols)+
@@ -35,9 +35,9 @@
 #'     annotate(geom="text", x=dat$Groups[3], y=dat$meany[3]+dat$sdy[3]+0.5, label="a", color="black")
 #' 
 #' 
-#' ####################################   
-#' # Case2: geom_point and double errorbars
-#' ######################## ############  
+#' ##--------------------------------------------  
+#' #     Case2: geom_point and double errorbars
+#' ##--------------------------------------------
 #' p<- ggplot(data=dat,mapping = aes(x=dat$meanx, y=dat$meany))+
 #'        geom_point(aes(colour=factor(dat$Groups)))+
 #'        scale_color_manual(values = cols)+
