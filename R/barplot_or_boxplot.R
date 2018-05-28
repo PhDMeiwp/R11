@@ -54,6 +54,6 @@
 #' # More links
 #' # http://www.sthda.com/english/wiki/ggplot2-texts-add-text-annotations-to-a-graph-in-r-software
 #' # http://t-redactyl.io/blog/2016/04/creating-plots-in-r-using-ggplot2-part-10-boxplots.html
-#' @seealso \code{\link[stats]{bartlett.test}}, \code{\link[car]{leveneTest}}, \code{\link[DescTools]{LeveneTest}}, \code{\link[dunn.test]{dunn.test}}, 
+#' @seealso \code{\link[stats]{bartlett.test}}, \code{\link[car]{leveneTest}}, \code{\link[DescTools]{LeveneTest}}, \code{\link[dunn.test]{dunn.test}} 
 
 barplot_or_boxplot<-function(){?barplot_or_boxplot}

@@ -53,6 +53,6 @@
 #' # http://ggplot2.tidyverse.org/reference/geom_point.html
 #' # http://ggplot2.tidyverse.org/reference/geom_linerange.html
 #' # https://groups.google.com/forum/#!topic/ggplot2/aiJKyg8U7QM
-#' @seealso \code{\link[stats]{bartlett.test}}, \code{\link[car]{leveneTest}}, \code{\link[DescTools]{LeveneTest}}, \code{\link[dunn.test]{dunn.test}}, 
+#' @seealso \code{\link[ggplot2]{geom_crossbar}}, \code{\link[ggplot2]{scale_color_manual}}, \code{\link[ggplot2]{scale_y_continuous}}, \code{\link[ggplot2]{theme}} 
 
 ggplot_errorbar<-function(){?ggplot_errorbar}

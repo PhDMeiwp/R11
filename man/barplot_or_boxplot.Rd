@@ -63,5 +63,5 @@ p + annotate(geom="text", x=1, y=max(dat$x[dat$group=="group1"])+1, label="b", c
 # http://t-redactyl.io/blog/2016/04/creating-plots-in-r-using-ggplot2-part-10-boxplots.html
 }
 \seealso{
-\code{\link[stats]{bartlett.test}}, \code{\link[car]{leveneTest}}, \code{\link[DescTools]{LeveneTest}}, \code{\link[dunn.test]{dunn.test}},
+\code{\link[stats]{bartlett.test}}, \code{\link[car]{leveneTest}}, \code{\link[DescTools]{LeveneTest}}, \code{\link[dunn.test]{dunn.test}}
 }

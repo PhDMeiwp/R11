@@ -62,5 +62,5 @@ q + annotate(geom="text", x=dat$meanx[1], y=dat$meany[1]+dat$sdy[1]+0.5, label="
 # https://groups.google.com/forum/#!topic/ggplot2/aiJKyg8U7QM
 }
 \seealso{
-\code{\link[stats]{bartlett.test}}, \code{\link[car]{leveneTest}}, \code{\link[DescTools]{LeveneTest}}, \code{\link[dunn.test]{dunn.test}},
+\code{\link[ggplot2]{geom_crossbar}}, \code{\link[ggplot2]{scale_color_manual}}, \code{\link[ggplot2]{scale_y_continuous}}, \code{\link[ggplot2]{theme}}
 }
