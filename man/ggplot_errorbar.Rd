@@ -57,7 +57,7 @@ q + annotate(geom="text", x=dat$meanx[1], y=dat$meany[1]+dat$sdy[1]+0.5, label="
     annotate(geom="text", x=dat$meanx[3], y=dat$meany[3]+dat$sdy[3]+0.5, label="a", color="black")
     
 # More links
-# http://ggplot2.tidyverse.org/reference/geom_point.html
+\\href{http://ggplot2.tidyverse.org/reference/geom_point.html}{How to geom_point?}
 # http://ggplot2.tidyverse.org/reference/geom_linerange.html
 # https://groups.google.com/forum/#!topic/ggplot2/aiJKyg8U7QM
 }
