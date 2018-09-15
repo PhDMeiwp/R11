@@ -15,14 +15,18 @@ Dataset contains only 'y' and 'factor(x)'. The heights of the bars represent y-v
 library(R11)
 y = iris$Sepal.Length
 x = iris$Species
+
 # vertical
 ggbar_MeanSD(x, y)
+
 # horizontal
 ggbar_MeanSD(x, y, alpha = 0.5) +
   coord_flip()
+
 # set colors
 ggbar_MeanSD(x, y, fill.bar = c("grey10", "grey50", "grey70"))+
   theme_bw()
+
 # set ylim using coor_cartesian()
 ggbar_MeanSD(x, y, alpha = 0.5) +
    coord_cartesian(ylim = c(0, 10))
