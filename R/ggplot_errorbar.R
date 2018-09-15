@@ -1,8 +1,8 @@
 #' An Example for 'ggplot' with Errorbar
-#' 
+#'
 #' @description An exmaple.
 #' @export
-#' @examples 
+#' @examples
 #' library(R11)
 #' # ggplot_errorbar()
 #' meanx <- c(-20,-18,-15)
@@ -12,10 +12,10 @@
 #' Groups <- c('group1', 'group2', 'group3')
 #' dat<-data.frame(meanx, meany, sdx, sdy, Groups)
 #' View(dat)
-#' 
+#'
 #' library(ggplot2)
 #' cols<-c("grey10", "blue", "red")
-#' 
+#'
 #' ##--------------------------------------------
 #' #      Case1: geom_barplot and geom_errorbar
 #' ##--------------------------------------------
@@ -26,16 +26,16 @@
 #'        xlab('Groups')+ylab('x value')+ theme_bw()
 #' p <- p + theme(panel.grid = element_blank())
 #' p
-#' 
+#'
 #' q <- p + geom_errorbar(aes(ymin=dat$meany-dat$sdy, ymax=dat$meany+dat$sdy), width=0.15)
 #' q
-#' 
-#' q + annotate(geom="text", x=dat$Groups[1], y=dat$meany[1]+dat$sdy[1]+0.5, label="b", color="black") + 
-#'     annotate(geom="text", x=dat$Groups[2], y=dat$meany[2]+dat$sdy[2]+0.5, label="a", color="black") + 
+#'
+#' q + annotate(geom="text", x=dat$Groups[1], y=dat$meany[1]+dat$sdy[1]+0.5, label="b", color="black") +
+#'     annotate(geom="text", x=dat$Groups[2], y=dat$meany[2]+dat$sdy[2]+0.5, label="a", color="black") +
 #'     annotate(geom="text", x=dat$Groups[3], y=dat$meany[3]+dat$sdy[3]+0.5, label="a", color="black")
-#' 
-#' 
-#' ##--------------------------------------------  
+#'
+#'
+#' ##--------------------------------------------
 #' #     Case2: geom_point and double errorbars
 #' ##--------------------------------------------
 #' p<- ggplot(data=dat,mapping = aes(x=dat$meanx, y=dat$meany))+
@@ -44,19 +44,19 @@
 #'        scale_y_continuous(limits = c(0,13), expand = c(0,0))+
 #'        xlab('Groups')+ylab('x value')+ theme_bw()
 #' p
-#' q <- p + 
+#' q <- p +
 #'     geom_errorbar(aes(ymin=dat$meany-dat$sdy, ymax=dat$meany+dat$sdy), width=0.3)+
 #'     geom_errorbarh(aes(xmin=dat$meanx-dat$sdx, xmax=dat$meanx+dat$sdx), height=0.3)
 #' q
-#'         
-#' q + annotate(geom="text", x=dat$meanx[1], y=dat$meany[1]+dat$sdy[1]+0.5, label="b", color="black") + 
-#'     annotate(geom="text", x=dat$meanx[2], y=dat$meany[2]+dat$sdy[2]+0.5, label="a", color="black") + 
+#'
+#' q + annotate(geom="text", x=dat$meanx[1], y=dat$meany[1]+dat$sdy[1]+0.5, label="b", color="black") +
+#'     annotate(geom="text", x=dat$meanx[2], y=dat$meany[2]+dat$sdy[2]+0.5, label="a", color="black") +
 #'     annotate(geom="text", x=dat$meanx[3], y=dat$meany[3]+dat$sdy[3]+0.5, label="a", color="black")
-#'     
+#'
 #' # More links
 #' # https://ggplot2.tidyverse.org/reference/geom_point.html
 #' # https://ggplot2.tidyverse.org/reference/geom_linerange.html
 #' # https://groups.google.com/forum/#!topic/ggplot2/aiJKyg8U7QM
-#' @seealso \code{\link[ggplot2]{geom_crossbar}}, \code{\link[ggplot2]{scale_color_manual}}, \code{\link[ggplot2]{scale_y_continuous}}, \code{\link[ggplot2]{theme}} 
+#' @seealso \code{\link[ggplot2]}
 
 ggplot_errorbar<-function(){?ggplot_errorbar}

@@ -12,28 +12,27 @@ Get the development version from github:
 
 ## Usage
 	data_summary(x, digits = 3)
+	
+	ggbar_MeanSD(x, y, 
+			fill.bar = NULL, width.bar = 0.5, 
+			col.border = NULL, size.border = 1, 
+			alpha = 1, 
+			width.errorbar = 0.3, col.errorbar = NULL, size.errorbar = 1)
 
 ## Examples
-	
+	# library(R11)
     x<-c(1,3,4,6,8,11,13,15,40,50,100) 
     data_summary(x, digits = 3)
 	
 *then output as follows:*
 
  <img src="images/data_summary.jpg" width="490">
-
-    
-## Description
-The results include sample number (N), mean, varicance (Var), 
-standard deviation (sd), standard error [se, =sd/sqrt(n)], coefficient of variation (CV, %),
-median, **median absolute deviation (mad)**, the first quartile (Q1), the third quartile (Q3), interquartile range (IQR), minimum, maximum, range
-corrected sum of squares (CSS), uncorrected sum of squares (USS).
-
-## Note 
-The basic functions in 'data_summary()' are cited from 'stats' package of R.
-
-Find more functions in 'DescTools' pacakge, 
-such as Gini Coefficient, Geometric Mean and Standard Deviation, G-Test for Count Data, **Skewness and Kurtosis, Confidence Interval for the Mean, Confidence Interval for the Median**.
-
-## References
-	citation("stats")
+	
+	# library(R11)
+	y = iris$Sepal.Length
+	x = iris$Species
+	ggbar_MeanSD(x, y)
+	
+*then output as follows:*
+ 
+  <img src="images/ggbar_MeanSD.png" width="490">

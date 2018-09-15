@@ -1,0 +1,6 @@
+Changes in version 0.0.91
+------------------------------------------------------------------------------
+Date: 2018-09-15
+* add `ggbar_MeanSD()` function
+* add `theme_ggR11()` function
+
